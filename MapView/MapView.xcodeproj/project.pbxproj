@@ -46,6 +46,7 @@
 		25757F4F1291C8640083D504 /* RMCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 25757F4D1291C8640083D504 /* RMCircle.h */; };
 		25757F501291C8640083D504 /* RMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 25757F4E1291C8640083D504 /* RMCircle.m */; };
 		3849889C0F6F758100496293 /* libProj4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D818500F6F67B90034598B /* libProj4.a */; };
+		9378877916154C9E007CF24C /* libGRMustache5-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9378877816154C9E007CF24C /* libGRMustache5-iOS.a */; };
 		96492C400FA8AD3400EBA6D2 /* RMGlobalConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 96492C3F0FA8AD3400EBA6D2 /* RMGlobalConstants.h */; };
 		B1EB26C610B5D8E6009F8658 /* RMNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = B1EB26C510B5D8E6009F8658 /* RMNotifications.h */; };
 		B8474BA40EB40094006A0BC1 /* RMDatabaseCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B8474B980EB40094006A0BC1 /* RMDatabaseCache.h */; };
@@ -99,12 +100,10 @@
 		DD2B375614CF8197008DE8CB /* RMMBTilesSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B375414CF8197008DE8CB /* RMMBTilesSource.m */; };
 		DD3BEF7915913C55007892D8 /* RMAttributionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3BEF7715913C55007892D8 /* RMAttributionViewController.h */; };
 		DD3BEF7A15913C55007892D8 /* RMAttributionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3BEF7815913C55007892D8 /* RMAttributionViewController.m */; };
-		DD5A200915CAD03700FE4157 /* libGRMustache4-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5A200815CAD03700FE4157 /* libGRMustache4-iOS.a */; };
 		DD5A200B15CAD09400FE4157 /* GRMustache.h in Headers */ = {isa = PBXBuildFile; fileRef = DD5A200A15CAD09400FE4157 /* GRMustache.h */; };
-		DD6380DD152E72880074E66E /* RMMapBoxSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6380DB152E72880074E66E /* RMMapBoxSource.h */; };
-		DD6380DE152E72880074E66E /* RMMapBoxSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6380DC152E72880074E66E /* RMMapBoxSource.m */; };
 		DD5FA1EB15E2B020004EB6C5 /* RMLoadingTileView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD5FA1E915E2B020004EB6C5 /* RMLoadingTileView.h */; };
 		DD5FA1EC15E2B020004EB6C5 /* RMLoadingTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5FA1EA15E2B020004EB6C5 /* RMLoadingTileView.m */; };
+		DD6380DD152E72880074E66E /* (null) in Headers */ = {isa = PBXBuildFile; };
 		DD8CDB4A14E0507100B73EB9 /* RMMapQuestOSMSource.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8CDB4814E0507100B73EB9 /* RMMapQuestOSMSource.h */; };
 		DD8CDB4B14E0507100B73EB9 /* RMMapQuestOSMSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8CDB4914E0507100B73EB9 /* RMMapQuestOSMSource.m */; };
 		DD8FD7541559E4A40044D96F /* RMUserLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = DD8FD7521559E4A40044D96F /* RMUserLocation.h */; };
@@ -180,6 +179,7 @@
 		25757F4E1291C8640083D504 /* RMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMCircle.m; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* MapView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView_Prefix.pch; sourceTree = "<group>"; };
+		9378877816154C9E007CF24C /* libGRMustache5-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGRMustache5-iOS.a"; path = "Map/GRMustache/lib/libGRMustache5-iOS.a"; sourceTree = "<group>"; };
 		96492C3F0FA8AD3400EBA6D2 /* RMGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGlobalConstants.h; sourceTree = "<group>"; };
 		B1EB26C510B5D8E6009F8658 /* RMNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMNotifications.h; sourceTree = "<group>"; };
 		B83E64B60E80E73F001663B6 /* RMPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPixel.h; sourceTree = "<group>"; };
@@ -263,6 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9378877916154C9E007CF24C /* libGRMustache5-iOS.a in Frameworks */,
 				B8C974500E8A19B2007D16AD /* CoreFoundation.framework in Frameworks */,
 				B8C974510E8A19B2007D16AD /* CoreGraphics.framework in Frameworks */,
 				B8C974520E8A19B2007D16AD /* CoreLocation.framework in Frameworks */,
@@ -270,7 +271,6 @@
 				B8C974540E8A19B2007D16AD /* QuartzCore.framework in Frameworks */,
 				B8474BC10EB4019A006A0BC1 /* libsqlite3.dylib in Frameworks */,
 				3849889C0F6F758100496293 /* libProj4.a in Frameworks */,
-				DD5A200915CAD03700FE4157 /* libGRMustache4-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +326,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				9378877816154C9E007CF24C /* libGRMustache5-iOS.a */,
 				B8C9740D0E8A196E007D16AD /* Map */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -600,7 +601,7 @@
 				1607499514E120A100D535F5 /* RMGenericMapSource.h in Headers */,
 				16FFF2CB14E3DBF700A170EC /* RMMapQuestOpenAerialSource.h in Headers */,
 				DDC4BED5152E3BD700089409 /* RMInteractiveSource.h in Headers */,
-				DD6380DD152E72880074E66E /* RMMapBoxSource.h in Headers */,
+				DD6380DD152E72880074E66E /* (null) in Headers */,
 				DD3BEF7915913C55007892D8 /* RMAttributionViewController.h in Headers */,
 				DD8FD7541559E4A40044D96F /* RMUserLocation.h in Headers */,
 				DDA6B8BD155CAB67003DB5D8 /* RMUserTrackingBarButtonItem.h in Headers */,
@@ -747,6 +748,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos6.0]" = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -768,6 +775,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos6.0]" = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
