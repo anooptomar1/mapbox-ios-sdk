@@ -1690,7 +1690,7 @@
 {
     _overlayView.hidden = !includeOverlay;
 
-    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, [[UIScreen mainScreen] scale]);
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 1);
 
     for (RMMapTiledLayerView *tiledLayerView in _tiledLayersSuperview.subviews)
         tiledLayerView.useSnapshotRenderer = YES;
