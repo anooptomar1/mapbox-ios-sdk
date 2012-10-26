@@ -54,7 +54,7 @@
 
 #pragma mark --- begin constants ----
 
-#define kZoomRectPixelBuffer 150.0
+#define kZoomRectPixelBuffer 90.0
 
 #define kDefaultInitialLatitude  38.913175
 #define kDefaultInitialLongitude -77.032458
@@ -208,6 +208,7 @@
                                minZoomLevel:(float)minZoomLevel
                             backgroundImage:(UIImage *)backgroundImage
 {
+    _topPadding = 0;
     _constrainMovement = _enableBouncing = _zoomingInPivotsAroundCenter = NO;
     _enableDragging = YES;
 
@@ -1047,20 +1048,20 @@
             if ((myPoint.y / (self.bounds.size.height - pixelBuffer)) > 1)
             {
                 zoomRect.size.width = self.bounds.size.width * (myPoint.y / (self.bounds.size.height - pixelBuffer));
-                zoomRect.size.height = self.bounds.size.height * (myPoint.y / (self.bounds.size.height - pixelBuffer));
+                zoomRect.size.height = (self.bounds.size.height + self.topPadding) * (myPoint.y / (self.bounds.size.height - pixelBuffer));
             }
         }
         else
         {
             if ((myPoint.x / (self.bounds.size.width - pixelBuffer)) > 1)
             {
-                zoomRect.size.width = self.bounds.size.width * (myPoint.x / (self.bounds.size.width - pixelBuffer));
-                zoomRect.size.height = self.bounds.size.height * (myPoint.x / (self.bounds.size.width - pixelBuffer));
+                zoomRect.size.width = (self.bounds.size.width) * (myPoint.x / (self.bounds.size.width - pixelBuffer));
+                zoomRect.size.height = (self.bounds.size.height + self.topPadding) * (myPoint.x / (self.bounds.size.width - pixelBuffer));
             }
         }
 
         myOrigin.x = myOrigin.x - (zoomRect.size.width / 2);
-        myOrigin.y = myOrigin.y - (zoomRect.size.height / 2);
+        myOrigin.y = myOrigin.y - (zoomRect.size.height / 2) + (self.topPadding/2 * (myPoint.x / (self.bounds.size.width - pixelBuffer)));
         zoomRect.origin = myOrigin;
 
         [self setProjectedBounds:zoomRect animated:animated];
