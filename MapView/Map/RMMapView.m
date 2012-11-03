@@ -2527,8 +2527,11 @@
         return NSOrderedSame;
     }];
 
-    for (CGFloat i = 0; i < [sortedAnnotations count]; i++)
-        ((RMAnnotation *)[sortedAnnotations objectAtIndex:i]).layer.zPosition = (CGFloat)i;
+    for (CGFloat i = 0; i < [sortedAnnotations count]; i++) {
+	    if (((RMAnnotation *)[sortedAnnotations objectAtIndex:i]).layer.zPosition == 0.0f) {
+            ((RMAnnotation *)[sortedAnnotations objectAtIndex:i]).layer.zPosition = (CGFloat)i;
+        }
+    }
 
     [CATransaction commit];
 }
